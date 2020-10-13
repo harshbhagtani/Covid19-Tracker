@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: rgb(247, 241, 241);
+  background-image: url('https://www.fda.gov/files/covid19-1600x900.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+.appheader{
+  margin: 0;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.appstats{
+  margin-top: 40px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.App{
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
 }
+.appleft{
+  flex-grow: .8;
+}
+.appright{
+  width:350px ;
+}
+.appdropdown{
+  font-weight: bold;
+}
+@media (max-width:950px){
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .App{
+    flex-direction: column;
+   
   }
-  to {
-    transform: rotate(360deg);
+  .appright{
+    
+    width: 90vw;
   }
+  body{
+    background-size: 100% 100%;
+  }
+  
+  
 }

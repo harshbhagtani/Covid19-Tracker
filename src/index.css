@@ -11,3 +11,95 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.table{
+  
+  height: 40vh;
+  overflow: scroll;
+  
+}
+.table tr{
+  display: flex;
+  justify-content: space-between;
+ 
+}
+.table tr:nth-child(odd){
+  background-color: rgb(236, 235, 235);
+}
+.table td{
+
+  padding: 0.2rem;
+
+}
+
+.graph{
+  height: 250px;
+  position: relative;
+ display: flex;
+ justify-content: space-evenly;
+ align-items: flex-end;
+}
+.bars{
+  background-color: red;
+}
+.bars:hover{
+  background-color:black;
+}
+.date-cases{
+  position: absolute;
+  left: 35%;
+  top: 2%;
+  color: gray;
+}
+.scale{
+  width: 30px;
+  height: 100%;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: .6rem;
+
+}
+.map {
+  height: 350px;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 20px;
+  margin-top: 16px;
+  box-shadow: 0 0 8px -4px rgba(0, 0, 0, 0.5);
+}
+.map .leaflet-container {
+  height: 100%;
+  border-radius: 12px;
+  
+}
+.class{
+  line-height: 1.2rem;
+}
+
+.flag{
+  
+  width: 25%;
+  height: 25%;
+
+
+}
+::-webkit-scrollbar{
+  display: none;
+}
+@media (max-width:950px){
+
+  .App{
+    flex-direction: column;
+   
+  }
+  .table td{
+    padding: .5rem;
+  }
+  .cards{
+    font-size: .7rem;
+  }
+  
+  
+}
